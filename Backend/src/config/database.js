@@ -12,6 +12,8 @@ async function connectToDB() {
     catch (err) {
         console.log(err)
     }
+
 }
+
 
 module.exports = connectToDB
