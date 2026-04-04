@@ -1,5 +1,13 @@
 #!/bin/bash
 
+echo "Got the latest code"
+
+cd ~/interview_ai
+
+git fetch --all
+git reset --hard origin/main
+git pull origin main
+
 echo "🚀 Starting deployment..."
 
 cd ~/interview_ai || exit
