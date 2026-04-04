@@ -22,8 +22,8 @@ echo "⚙️ Starting backend..."
 
 cd ../Backend || exit
 
-pm2 delete interview-ai-backend 2>/dev/null
-pm2 start src/index.js --name interview-ai-backend
+pm2 delete interview-backend 2>/dev/null
+pm2 start server.js --name interview-backend
 
 pm2 save
 
